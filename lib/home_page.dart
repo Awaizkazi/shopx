@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_staggered_grid_view/flutter_staggered_grid_view.dart';
 
 class HomePage extends StatefulWidget {
   const HomePage({super.key});
@@ -52,6 +53,7 @@ class _HomePageState extends State<HomePage> {
               ],
             ),
           ),
+          StaggeredGrid.count(crossAxisCount: 2)
         ],
       ),
     );
