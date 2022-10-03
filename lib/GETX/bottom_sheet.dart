@@ -5,8 +5,8 @@ class BottomSheetExample extends StatelessWidget {
   const BottomSheetExample({super.key});
   @override
   Widget build(BuildContext context) {
-    bool Value = false;
     return GetMaterialApp(
+      debugShowCheckedModeBanner: false,
       title: 'Bottom Sheet',
       home: Scaffold(
         appBar: AppBar(
