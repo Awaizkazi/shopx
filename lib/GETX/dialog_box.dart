@@ -66,9 +66,7 @@ class DialogBox extends StatelessWidget {
                     // ),
                     actions: [
                       ElevatedButton(
-                        onPressed: () {
-                          Get.back();
-                        },
+                        onPressed: () {Get.back();},
                         child: Text('Action 1'),
                       ),
                       ElevatedButton(

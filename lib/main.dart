@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:shopx/GETX/bottom_sheet.dart';
 import 'GETX/dialog_box.dart';
 import 'home_page.dart';
 
@@ -19,7 +19,7 @@ class MyApp extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: DialogBox(),
+      home: BottomSheetExample(),
     );
   }
 }
