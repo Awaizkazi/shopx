@@ -5,6 +5,7 @@ import 'package:shopx/GETX/route_naviagtion.dart';
 import 'GETX/counter.dart';
 import 'GETX/dialog_box.dart';
 import 'GETX/named_navigate.dart';
+import 'GETX/observable.dart';
 import 'home_page.dart';
 
 void main() {
@@ -23,7 +24,7 @@ class MyApp1 extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: CounterUsingGetX(),
+      home: StudentObservable(),
     );
   }
 }
