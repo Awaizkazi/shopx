@@ -6,6 +6,7 @@ import 'GETX/counter.dart';
 import 'GETX/dialog_box.dart';
 import 'GETX/named_navigate.dart';
 import 'GETX/observable.dart';
+import 'GETX/team_report.dart';
 import 'home_page.dart';
 
 void main() {
@@ -24,13 +25,13 @@ class MyApp1 extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: StudentObservable(),
+      home: TeamReport(),
     );
   }
 }
 
 
-//! #5 || Flutter GetX Tutorial || Route Navigation for Un-named Routes using GetX Library
+//! #6 || Flutter GetX Tutorial || Route Navigation for Un-named Routes using GetX Library
 /*
 https://www.youtube.com/watch?v=7_Ze16_tMBE&list=PLCaS22Sjc8YR32XmudgmVqs49t-eKKr9t&index=6
 
