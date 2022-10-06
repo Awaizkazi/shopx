@@ -315,7 +315,7 @@ class _TeamReportState extends State<TeamReport> {
                   ],
                 ),
                 Row(
-                  mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
                   children: [
                     Cards(
                         cardColor: Color.fromARGB(255, 45, 146, 48),

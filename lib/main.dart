@@ -27,7 +27,7 @@ class MyApp1 extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: TeamReport(),
+      home: Ex(),
     );
   }
 }
