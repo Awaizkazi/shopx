@@ -7,7 +7,7 @@ import 'GETX/counter.dart';
 import 'GETX/dialog_box.dart';
 import 'GETX/named_navigate.dart';
 import 'GETX/observable.dart';
-import 'GETX/p1.dart';
+import 'GETX/report_card.dart';
 import 'GETX/team_report.dart';
 import 'home_page.dart';
 
