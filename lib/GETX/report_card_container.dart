@@ -1,8 +1,7 @@
-
 import 'package:flutter/material.dart';
 
-class Ex extends StatelessWidget {
-  const Ex({super.key});
+class ReportCardContainer extends StatelessWidget {
+  const ReportCardContainer({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -10,19 +9,21 @@ class Ex extends StatelessWidget {
       child: Scaffold(
         body: Center(
           child: Container(
-            width: 380,
+            margin: EdgeInsets.all(10),
+            width: double.infinity,
             height: 520,
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(12),
               color: Colors.white,
               boxShadow: [
                 BoxShadow(
-                    color: Colors.black, blurRadius: 5.0, offset: Offset(0, 4)),
+                    color: Colors.black,
+                    blurRadius: 5.0,
+                    offset: Offset(0, 4)),
               ],
             ),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              // mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
                 Padding(
                   padding: const EdgeInsets.all(6.0),
@@ -40,7 +41,7 @@ class Ex extends StatelessWidget {
                     left: 10,
                   ),
                   child: Container(
-                    width: 360,
+                    width: double.infinity,
                     height: 483,
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(12),
@@ -182,47 +183,54 @@ class Ex extends StatelessWidget {
       cardTextColor,
       cardWidth,
       cardheight}) {
-    return Container(
-      width: cardWidth,
-      height: cardheight,
-      decoration: BoxDecoration(
-          color: cardColor, borderRadius: BorderRadius.circular(6)),
-      child: Column(
-        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        children: [
-          Text(
-            cardTitle,
-            textAlign: TextAlign.center,
-            style: TextStyle(color: cardTextColor, fontSize: 15),
+    return Expanded(
+      child: Container(
+        margin: EdgeInsets.all(2),
+        width: cardWidth,
+        height: cardheight,
+        decoration: BoxDecoration(
+            color: cardColor, borderRadius: BorderRadius.circular(6)),
+        child: Expanded(
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+            children: [
+              Text(
+                cardTitle,
+                textAlign: TextAlign.center,
+                style: TextStyle(color: cardTextColor, fontSize: 15),
+              ),
+              Text(
+                cardSubTitle,
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                    color: cardTextColor,
+                    fontSize: 15,
+                    fontWeight: FontWeight.bold),
+              ),
+            ],
           ),
-          Text(
-            cardSubTitle,
-            textAlign: TextAlign.center,
-            style: TextStyle(
-                color: cardTextColor,
-                fontSize: 15,
-                fontWeight: FontWeight.bold),
-          ),
-        ],
+        ),
       ),
     );
   }
 
   Widget ReportMiddleText({reportText}) {
-    return Row(
-      crossAxisAlignment: CrossAxisAlignment.start,
-      children: [
-        Padding(
-          padding: const EdgeInsets.only(top: 2.0, left: 3),
-          child: Text(
-            reportText,
-            style: TextStyle(
-              fontSize: 18,
-              decoration: TextDecoration.underline, // <-- SEE HERE
+    return Expanded(
+      child: Row(
+        crossAxisAlignment: CrossAxisAlignment.start,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(top: 2.0, left: 3),
+            child: Text(
+              reportText,
+              style: TextStyle(
+                fontSize: 18,
+                decoration: TextDecoration.underline, // <-- SEE HERE
+              ),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
