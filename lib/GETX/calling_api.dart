@@ -28,14 +28,14 @@ class _CallingAPIState extends State<CallingAPI> {
     var res = await http.get(Uri.parse(url));
     data = jsonDecode(res.body);
     setState(() {});
+    print(data);
   }
 
   Widget build(BuildContext context) {
     return SafeArea(
       child: Container(
-       
         child: Card(
-          child: ListView.builder(
+          child: ListView.builder(itemCount: data.length,
             itemBuilder: (context, index) {
               return Card(
                 child: Column(

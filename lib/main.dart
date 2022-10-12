@@ -10,6 +10,9 @@ import 'GETX/named_navigate.dart';
 import 'GETX/observable.dart';
 import 'GETX/report_card_container.dart';
 import 'GETX/team_report.dart';
+import 'Practice/p2.dart';
+import 'Practice/p3.dart';
+import 'Practice/p4.dart';
 import 'Practice/practice1.dart';
 import 'home_page.dart';
 
@@ -40,7 +43,7 @@ class MyApp1 extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: ReportCardContainer(),
+      home: TeamReport(),
     );
   }
 }
