@@ -12,7 +12,9 @@ import 'GETX/report_card_container.dart';
 import 'GETX/team_report.dart';
 import 'Practice/p2.dart';
 import 'Practice/p3.dart';
-import 'Practice/p4.dart';
+import 'Practice/p6.dart';
+import 'Practice/team_report2.dart';
+import 'Practice/p5.dart';
 import 'Practice/practice1.dart';
 import 'home_page.dart';
 
@@ -30,7 +32,7 @@ class MyApp1 extends StatelessWidget {
         ClampingScrollWrapper.builder(context, Widget!),
         breakpoints: [
           ResponsiveBreakpoint.resize(230, name: MOBILE),
-          ResponsiveBreakpoint.autoScale(600, name: TABLET),
+          ResponsiveBreakpoint.resize(600, name: TABLET),
           ResponsiveBreakpoint.resize(900, name: DESKTOP),
           ResponsiveBreakpoint.autoScale(1400, name: 'XL'),
           ResponsiveBreakpoint.resize(2300, name: '2K'),
@@ -43,7 +45,7 @@ class MyApp1 extends StatelessWidget {
         primarySwatch: Colors.blue,
         visualDensity: VisualDensity.adaptivePlatformDensity,
       ),
-      home: TeamReport(),
+      home: p6(),
     );
   }
 }
