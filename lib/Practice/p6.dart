@@ -14,6 +14,7 @@ class p6 extends StatefulWidget {
 class _p6State extends State<p6> {
   final url =
       'https://www.uponly.in/mobileappapi/assigned_data_by_emp_id.php?emp_id=11147';
+  // final url = 'https://jsonplaceholder.typicode.com/comments';
   // final url = 'https://jsonplaceholder.typicode.com/photos';
   var data = [];
 
@@ -72,8 +73,8 @@ class _p6State extends State<p6> {
                               Padding(
                                 padding: const EdgeInsets.all(6.0),
                                 child: Text(
-                                  data[index]['lead_id'].toString(),
-                                  style: TextStyle( 
+                                  data[index = index - 1]['lead_id'].toString(),
+                                  style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w800,
                                     color: Color(0xff2A3C62),
