@@ -73,7 +73,7 @@ class _p6State extends State<p6> {
                               Padding(
                                 padding: const EdgeInsets.all(6.0),
                                 child: Text(
-                                  data[index = index - 1]['lead_id'].toString(),
+                                  data[index - 1]['lead_id'].toString(),
                                   style: TextStyle(
                                     fontSize: 18,
                                     fontWeight: FontWeight.w800,
