@@ -40,6 +40,7 @@ class _p6State extends State<p6> {
         body: ListView.builder(
             shrinkWrap: true,
             // physics: NeverScrollableScrollPhysics(),
+            // Increae kiya hai Length ki Value Bcwz 0-18 Wo API se lera tha so thats why wo 1st value Show nhi karra tha
             itemCount: data.length + 1,
             itemBuilder: (context, index) {
               // I am doing this task by using the ternary operator
@@ -73,8 +74,7 @@ class _p6State extends State<p6> {
                               Padding(
                                 padding: const EdgeInsets.all(6.0),
                                 child: Text(
-                                  // data[index = index- 1]['lead_id'].toString(),
-                                  // data[index - 1 + 0]['lead_id'].toString(),
+                                  // Index ki value -1 kiye hai bcwz 0-19 hua tha and API me 0-18 hai toh utna hi print krne ke  liye //
                                   data[index - 1]['lead_id'].toString(),
                                   style: TextStyle(
                                     fontSize: 18,
