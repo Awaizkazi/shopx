@@ -40,7 +40,7 @@ class _p6State extends State<p6> {
         body: ListView.builder(
             shrinkWrap: true,
             // physics: NeverScrollableScrollPhysics(),
-            itemCount: data.length,
+            itemCount: data.length + 1,
             itemBuilder: (context, index) {
               // I am doing this task by using the ternary operator
               return index == 0
@@ -74,6 +74,7 @@ class _p6State extends State<p6> {
                                 padding: const EdgeInsets.all(6.0),
                                 child: Text(
                                   // data[index = index- 1]['lead_id'].toString(),
+                                  // data[index - 1 + 0]['lead_id'].toString(),
                                   data[index - 1]['lead_id'].toString(),
                                   style: TextStyle(
                                     fontSize: 18,
